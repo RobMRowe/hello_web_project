@@ -9,8 +9,9 @@ class Application < Sinatra::Base
   end
 
   get '/hello' do
-    name = params[:name]
-    return "Hello #{name}"
+    # name = params[:name]
+    # return "Hello #{name}"
+    return '<html><head></head><body><h1>Hello!</h1></body></html>'
   end
 
   post '/submit' do
